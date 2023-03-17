@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="options">OPTIONS</string>
+    <string name="types_of_bet">TYPES OF BET</string>
+    <string name="the_a_z_of_nbetting">THE A-Z OF\nBETTING</string>
+    <string name="the_a_z_of_betting">THE A-Z OF BETTING</string>
+    <string name="notification">NOTIFICATION</string>
+    <string name="change_theme">CHANGE THEME</string>
+</resources>

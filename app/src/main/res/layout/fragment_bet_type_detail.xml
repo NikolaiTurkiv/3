@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.screens.BetTypeDetailFragment">
+
+
+    <ImageView
+        android:id="@+id/im_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/playing_football"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/im_bet_picture"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedSquare_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/app_text_style_main"
+        tools:text="SINGLE BET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_bet_picture" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                tools:text="Amongst the most common and most simple bet types, a 'Single' consists of backing one selection, whether that's for the next upcoming race or backing  a horse antepost for an upcoming festival\nIf you are just getting started with placing wagers then a single bet could well suit you best, as these are the simplest bets of all. Bookmakers offer increasingly sophisticated wagers to punters, but with a single bet it’s as straightforward as it gets. You are betting on one outcome or selection only, which might be a team to win a football match or a horse to win a race.\nThe odds for single bets on the outcomes of big matches and races are often those most prominently positioned when visiting the websites of bookmakers such as Betfair and Paddy Power.\nThese are basic wagers in which the potential profits depend on the quantity staked by the bettor and the odds offered by the bookmaker on the outcome in question. The principles here are pretty easy to understand for anyone who is new to betting. A single bet will win or lose according to the outcome of the match, race, competition or tournament being wagered on."
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
