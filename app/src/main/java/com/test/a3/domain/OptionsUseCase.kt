@@ -7,9 +7,15 @@ class OptionsUseCase @Inject constructor(
 ) {
 
     var isDarkTheme = sharedPreferencesRepository.isDarkTheme
+    val id = sharedPreferencesRepository.currentId
+
 
     fun saveTheme(isDark: Boolean){
         sharedPreferencesRepository.saveTheme(isDark)
+    }
+
+    fun saveId(id:String){
+        sharedPreferencesRepository.saveID(id)
     }
 
 }

@@ -10,7 +10,6 @@ import com.squareup.picasso.Picasso
 import com.test.a3.App
 import com.test.a3.R
 import com.test.a3.databinding.FragmentBetTypeDetailBinding
-import com.test.a3.databinding.FragmentDictionaryDetailBinding
 import com.test.a3.ui.viewmodels.BetViewModel
 import com.test.a3.ui.viewmodels.ViewModelFactory
 import com.test.a3.utils.setTheme

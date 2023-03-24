@@ -19,6 +19,7 @@ interface AppComponent {
     fun inject(fragment: TypeBetFragment)
     fun inject(fragment: DictionaryDetailFragment)
     fun inject(fragment: MainFragment)
+    fun inject(fragment: SplashFragment)
 
     @Component.Factory
     interface Factory {
